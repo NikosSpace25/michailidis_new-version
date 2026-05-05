@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <head>
+      <!-- BASIC META -->
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta
+        name="theme-color"
+        content="#f4e1c1"
+        media="(prefers-color-scheme: light)"
+      />
+      <meta
+        name="theme-color"
+        content="#1a1a1a"
+        media="(prefers-color-scheme: dark)"
+      />
+      <meta name="referrer" content="no-referrer-when-downgrade" />
+
+      <!-- PERFORMANCE HINTS -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+      <!-- PRELOAD CONTACT HERO  -->
+      <link
+        rel="preload"
+        as="image"
+        href="/assets/contact-hero.jpg"
+        fetchpriority="high"
+      />
+
+      <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- PAGE SPECIFIC SEO -->
+      <title>
+        Επικοινωνία | Φύλλο Βέργας Μιχαηλίδης - Επικοινωνήστε μαζί μας
+      </title>
+
+      <meta
+        name="description"
+        content="Επικοινωνήστε με το εργαστήριο Φύλλο Μιχαηλίδης. Βρείτε το τηλέφωνο, τη διεύθυνση και τη φόρμα επικοινωνίας για παραγγελίες και πληροφορίες."
+      />
+
+      <!-- CANONICAL LINK CONTACT PAGE -->
+      <link rel="canonical" href="https://zymes-michailidis.gr/ContactPage" />
+
+      <meta name="robots" content="index, follow" />
+
+      <!-- SITEMAP -->
+      <link
+        rel="sitemap"
+        type="application/xml"
+        title="Sitemap"
+        href="/sitemap.xml"
+      />
+
+      <!-- HREF LANG - CONTACT -->
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href="https://zymes-michailidis.gr/ContactPage"
+      />
+      <link
+        rel="alternate"
+        hreflang="el"
+        href="https://zymes-michailidis.gr/ContactPage"
+      />
+
+      <!-- FAVICONS -->
+      <link rel="icon" href="/assets/logo.jpeg" sizes="any" />
+      <link rel="icon" type="image/svg+xml" href="/assets/logo.jpeg" />
+      <link rel="apple-touch-icon" href="/assets/logo.jpeg" />
+
+      <!-- STYLESHEETS -->
+      <link rel="stylesheet" href="/styles/01-reset.css" />
+      <link rel="stylesheet" href="/styles/02-primitives.css" />
+      <link rel="stylesheet" href="/styles/03-components.css" />
+      <link rel="stylesheet" href="/styles/04-main.css" />
+
+      <!-- SCRIPTS -->
+      <script src="/scripts/main.js" defer></script>
+
+      <!-- OPEN GRAPH — SOCIAL MEDIA  -->
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="el_GR" />
+      <meta property="og:site_name" content="Φύλλο Βέργας Μιχαηλίδης" />
+      <meta property="og:title" content="Επικοινωνία | Ζύμες Μιχαηλίδης" />
+      <meta
+        property="og:description"
+        content="Θέλετε να μάθετε πού θα βρείτε τα φύλλα μας; Επικοινωνήστε απευθείας μαζί μας για κάθε απορία ή παραγγελία."
+      />
+      <meta
+        property="og:image"
+        content="https://zymes-michailidis.gr/og-contact.jpg"
+      />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:url" content="https://zymes-michailidis.gr/contact" />
+
+      <!-- STRUCTURED DATA FOR CONTACT PAGE -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Επικοινωνία - Φύλλο Μιχαηλίδης",
+          "description": "Στοιχεία επικοινωνίας του εργαστηρίου παραδοσιακού φύλλου Μιχαηλίδης.",
+          "url": "https://zymes-michailidis.gr/contact",
+          "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Φύλλο Βέργας Μιχαηλίδης",
+            "image": "https://zymes-michailidis.gr/assets/storefront.jpg",
+            "telephone": "+302164000660",
+            "email": "info@zymes-michailidis.gr",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Λεωφόρος Δημοκρατίας 236 ",
+              "addressLocality": "Αχαρνές",
+              "postalCode": "13671",
+              "addressCountry": "GR"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 37.9838,
+              "longitude": 23.7275
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "08:00",
+              "closes": "16:00"
+            }
+          }
+        }
+      </script>
+    </head>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav-wrapper">
+      <!-- NAVIGATION LANDMARK -->
+      <nav
+        class="rolling-pin-container"
+        role="navigation"
+        aria-label="Κύριο Μενού"
+      >
+        <!-- MOBILE TOGGLE -->
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <!-- BRAND/LOGO -->
+        <div class="nav-brand">
+          <a
+            href="/structure/mainPage.html"
+            class="logo-wrapper"
+            aria-label="Αρχική σελίδα"
+          >
+            <span class="logo-text">ΖΥΜΕΣ ΜΙΧΑΗΛΙΔΗΣ</span>
+            <!-- HOVER ICON -- HIDDEN ON MOBILE -->
+            <img
+              src="/assets/logo.jpeg"
+              alt="Zymes michailidis logo"
+              class="logo-hover-icon"
+              aria-hidden="true"
+            />
+          </a>
+        </div>
+
+        <!-- NAVIGATION ITEMS -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-link">
+            <a href="/structure/timeline.html">Χρονικό</a>
+          </li>
+
+          <li class="nav-link">
+            <a href="/structure/products.html">Προϊόντα</a>
+          </li>
+
+          <li class="nav-link nav-link-cta">
+            <a href="/structure/contactPage.html">Μιλήστε μας</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="contact-main__content">
+      <!-- GENERAL FORM CONTAINER -->
+      <section class="contact-wrapper">
+        <!-- INSIDE CONTENT FORM + ADRESSES + IMAGES -->
+        <div class="contact-page">
+          <!-- LEFT SIDE -->
+          <div class="contact-page__main">
+            <!--  HEADING -->
+            <div class="contact-section">
+              <h1 class="contact-section__title">Επικοινωνία</h1>
+            </div>
+
+            <!-- FORM + ADDRESSES -->
+            <div class="contact-section__content">
+              <!-- FORM -->
+              <form class="contact-section__form-wrapper">
+                <!-- FIRST NAME -->
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    placeholder=""
+                    aria-required="true"
+                    required
+                  />
+
+                  <label for="first-name" class="form__label"
+                    >Όνομα / Επιχείρηση</label
+                  >
+                </div>
+
+                <!-- LAST NAME -->
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    placeholder=""
+                    aria-required="false"
+                  />
+
+                  <label for="last-name" class="form__label">Επίθετο</label>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form__group">
+                  <input
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder=""
+                    aria-required="true"
+                    required
+                  />
+
+                  <label for="email" class="form__label">Ε-mail</label>
+                </div>
+
+                <!-- MESSAGE -->
+                <div class="form__group">
+                  <textarea
+                    class="form__input"
+                    name="message"
+                    id="message"
+                    placeholder=""
+                  ></textarea>
+
+                  <label for="message" class="form__label">Μήνυμα</label>
+                </div>
+
+                <button type="submit" class="form__submit">Αποστολή</button>
+              </form>
+
+              <!-- ADDRESSES / SOCIALS -->
+              <address class="contact-section__info-wrapper">
+                <!-- ADDRESSES -->
+                <div class="info-group">
+                  <h2 class="info-group__label">Διεύθυνση</h2>
+                  <div class="info-group__content">
+                    <p>Λεωφόρος Δημοκρατίας 236 , 13671, Αχαρνές</p>
+                    <p>Αθηνάς 57 & Σοφοκλέους (γωνία), 10552 ,Αττική</p>
+                  </div>
+                </div>
+
+                <!-- INFORMATIONS -->
+                <div class="info-group">
+                  <h2 class="info-group__label">Πληροφορίες</h2>
+                  <div class="info-group__content">
+                    <a
+                      href="mailto:inf0@zymes-michailidis.gr"
+                      class="info-group__link"
+                      >info@zymes-michailidis.gr</a
+                    >
+                    <a href="tel:+302164000660" class="info-group__link"
+                      >(+30) 216 400 06 60</a
+                    >
+                  </div>
+                </div>
+              </address>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE  -->
+          <div class="contact-page__sidebar">
+            <!-- IMAGES CONTAINER -->
+            <div class="gallery">
+              <ul class="gallery__list">
+                <!-- IMAGE 1 -->
+                <li class="gallery__item">
+                  <img
+                    src="/assets/hands-in-flour.jpg"
+                    alt="ζύμωμα με αλεύρι"
+                  />
+                </li>
+
+                <!-- IMAGE 2 -->
+                <li class="gallery__item">
+                  <img src="/assets/olive-oil.jpg" alt="σπορέλαιο συστατικό" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer
+      class="site-footer"
+      itemscope
+      itemtype="https://schema.org/FoodEstablishment"
+    >
+      <!-- INDEXED BY SEARCH ENGINES -->
+      <meta itemprop="name" content="Ζύμες Μιχαηλίδης" />
+      <meta
+        itemprop="description"
+        content="Παραδοσιακό φύλλο βέργας από τρεις γενιές. Ελληνικό αλεύρι, σπορέλαιο, χωρίς συντηρητικά."
+      />
+
+      <!-- MAIN FOOTER ROW -->
+      <div class="site-footer__main">
+        <!-- BRAND DESCRIPTION -->
+        <div class="site-footer__brand">
+          <p class="site-footer__description">
+            Φτιάχνουμε παραδοσιακό φύλλο βέργας με τα χέρια μας εδώ και τρεις
+            γενιές, χρησιμοποιώντας μόνο ελληνικό αλεύρι, σπορέλαιο και νερό.
+            Φύλλο για σπιτικές πίτες, εστιατόρια και ζαχαροπλαστεία σε όλη την
+            Ελλάδα.
+          </p>
+        </div>
+
+        <!-- LOGO -->
+        <div class="site-footer__logo">
+          <a
+            href="/structure/mainPage.html"
+            aria-label="Ζύμες Μιχαηλίδης - Αρχική σελίδα"
+          >
+            <img
+              src="/assets/logo.jpeg"
+              alt="Ζύμες Μιχαηλίδης"
+              class="site-footer__logo-img"
+              width="80"
+              height="80"
+            />
+          </a>
+        </div>
+
+        <!-- SITE FOOTER NAVIGATION -->
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <h3 class="site-footer__nav-title">Μενου</h3>
+          <ul class="site-footer__nav-list">
+            <li>
+              <a href="/structure/timeline.html" class="site-footer__nav-link"
+                >Χρονικό</a
+              >
+            </li>
+            <li>
+              <a href="/structure/products.html" class="site-footer__nav-link"
+                >Προϊόντα</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- SOCIAL LINKS -->
+        <nav class="site-footer__social" aria-label="Social media links">
+          <h3 class="site-footer__nav-title">Social</h3>
+          <ul class="site-footer__social-list">
+            <!-- INSTAGRAM SOCIAL -->
+            <li>
+              <a
+                href="/"
+                class="site-footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ακολουθήστε μας στο Instagram"
+              >
+                Instagram
+              </a>
+            </li>
+
+            <!-- TIK TOK -->
+            <li>
+              <a
+                href="/"
+                class="site-footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ακολουθήστε μας στο TikTok"
+              >
+                TikTok
+              </a>
+            </li>
+
+            <!-- FACEBOOK -->
+            <li>
+              <a
+                href="/"
+                class="site-footer__social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ακολουθήστε μας στο Facebook"
+              >
+                Facebook
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- BOTTOM ROW -- COPYRIGHT + ADDRESS -->
+      <div class="site-footer__bottom">
+        <div class="site-footer__legal">
+          <p class="site-footer__tagline">
+            Φύλλο σαν της γιαγιάς, σε ποσότητες για επαγγελματίες.
+          </p>
+          <p class="site-footer__copyright">
+            © Ζύμες Μιχαηλίδης 2026. Designed and developed by
+            <a
+              href="https://framepenguin.com/"
+              class="site-footer__copyright-mention"
+              >Framepenguin</a
+            >
+          </p>
+        </div>
+
+        <!-- ADDRESS -->
+        <address
+          class="site-footer__address"
+          itemprop="address"
+          itemscope
+          itemtype="https://schema.org/PostalAddress"
+        >
+          <span class="site-footer__address-marker" aria-hidden="true">●</span>
+          <span itemprop="streetAddress">Λεωφόρος Δημοκρατίας 236 ,</span>
+          <span itemprop="addressLocality">Αχαρνές,</span>
+          <span itemprop="addressRegion">Αθήνα,</span>
+          <span itemprop="postalCode">13671,</span>
+          <span itemprop="addressCountry" content="GR">Ελλάδα</span>
+        </address>
+
+        <!-- HIDDEN CONTACT DATA FOR SEO -->
+        <meta itemprop="telephone" content="+302164000660" />
+        <meta itemprop="email" content="info@zymes-michailidis.gr" />
+        <meta itemprop="url" content="https://zymes-michailidis.gr" />
+      </div>
+    </footer>
+  </body>
+</html>

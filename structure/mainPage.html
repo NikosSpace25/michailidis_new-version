@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="el">
+  <head>
+    <!--  BASIC META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- THEME COLOR - LIGHT & DARK -->
+    <meta
+      name="theme-color"
+      content="#f4e1c1"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#1a1a1a"
+      media="(prefers-color-scheme: dark)"
+    />
+
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+
+    <!-- PERFORMANCE HINTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- PRELOAD HERO IMAGE-->
+    <link
+      rel="preload"
+      as="image"
+      href="/assets/flourImage.jpg"
+      fetchpriority="high"
+    />
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PAGE-SPECIFIC SEO -->
+    <title>Φύλλο Βέργας Μιχαηλίδης | Παραδοσιακό Φύλλο Βέργας</title>
+
+    <meta
+      name="description"
+      content="Αυθεντικό παραδοσιακό φύλλο βέργας Μιχαηλίδης. Κορυφαία ποιότητα για επαγγελματίες & οικιακή χρήση. Η παράδοση στην πίτα ξεκινά από το σωστό φύλλο."
+    />
+
+    <link rel="canonical" href="https://zymes-michailidis.gr/" />
+
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <!-- SITEMAP & INTERNATIONALIZATION -->
+    <link
+      rel="sitemap"
+      type="application/xml"
+      title="Sitemap"
+      href="/sitemap.xml"
+    />
+
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://zymes-michailidis.gr/"
+    />
+    <link rel="alternate" hreflang="el" href="https://zymes-michailidis.gr/" />
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="/assets/logo.jpeg" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/assets//logo.jpeg" />
+    <link rel="apple-touch-icon" href="/assets//logo.jpeg" />
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/styles/01-reset.css" />
+    <link rel="stylesheet" href="/styles/02-primitives.css" />
+    <link rel="stylesheet" href="/styles/03-components.css" />
+    <link rel="stylesheet" href="/styles/04-main.css" />
+
+    <!-- SCRIPTS -->
+    <script src="/scripts/main.js" defer></script>
+
+    <!--  OPEN GRAPH (FACEBOOK, TIKTOK, INSTAGRAM) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="el_GR" />
+    <meta property="og:site_name" content="Φύλλο Βέργας Μιχαηλίδης" />
+    <meta
+      property="og:title"
+      content="Φύλλο Βέργας Μιχαηλίδης | Η Τέχνη του Παραδοσιακού"
+    />
+    <meta
+      property="og:description"
+      content="Παραδοσιακό φύλλο βέργας με αγνά υλικά. Ανακαλύψτε την ποιότητα Μιχαηλίδη για μοναδικές πίτες."
+    />
+    <meta
+      property="og:image"
+      content="https://zymes-michailidis.gr/og-preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://zymes-michailidis.gr/" />
+
+    <!-- STRUCTURED DATA (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FoodEstablishment",
+        "name": "Ζύμες Μιχαηλίδης",
+        "image": "https://zymes-michailidis.gr/og-preview.jpg",
+        "url": "https://zymes-michailidis.gr/",
+        "telephone": "+302164000660",
+        "email": "info@zymes-michailidis.gr",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Λεωφόρος Δημοκρατίας 236",
+          "addressLocality": "Αχαρνές",
+          "addressRegion": "Αθήνα",
+          "postalCode": "13671",
+          "addressCountry": "GR"
+        },
+        "description": "Παραδοσιακό φύλλο βέργας από τρεις γενιές. Ελληνικό αλεύρι, σπορέλαιο, χωρίς συντηρητικά.",
+        "foundingDate": "1968",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Greece"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <section class="general-website">
+      <!-- NAVBAR -->
+      <header class="nav-wrapper">
+        <!-- NAVIGATION LANDMARK -->
+        <nav
+          class="rolling-pin-container"
+          role="navigation"
+          aria-label="Κύριο Μενού"
+        >
+          <!-- MOBILE TOGGLE -->
+          <button
+            class="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+
+          <!-- BRAND/LOGO -->
+          <div class="nav-brand">
+            <a
+              href="/structure/mainPage.html"
+              class="logo-wrapper"
+              aria-label="Αρχική σελίδα"
+            >
+              <span class="logo-text">ΖΥΜΕΣ ΜΙΧΑΗΛΙΔΗΣ</span>
+              <!-- HOVER ICON -- HIDDEN ON MOBILE -->
+              <img
+                src="/assets/logo.jpeg"
+                alt="Zymes michailidis logo"
+                class="logo-hover-icon"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+
+          <!-- NAVIGATION ITEMS -->
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-link">
+              <a href="/structure/timeline.html">Χρονικό</a>
+            </li>
+
+            <li class="nav-link">
+              <a href="/structure/timeline.html">Προϊόντα</a>
+            </li>
+
+            <li class="nav-link nav-link-cta">
+              <a href="/structure/contactPage.html">Μιλήστε μας</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- HERO SECTION -->
+        <section class="hero-container">
+          <h1 class="hero-title">
+            Παράγουμε παραδοσιακό φύλλο που αναβαθμίζει κάθε πίτα.
+          </h1>
+
+          <p class="hero-description__sub-text">
+            Παραγωγή φύλλου βέργας που βοηθά επαγγελματίες και αρτοποιεία να
+            προσφέρουν γαστρονομικές εμπειρίες υψηλών προδιαγραφών και
+            ποιότητας.
+          </p>
+
+          <span class="hero-description__sentence">
+            Μοναδικό Φύλλο, Παράδοση & Τέχνη Ζύμης.
+          </span>
+
+          <figure class="hero-image" aria-labelledby="hero-heading">
+            <img
+              src="/assets/flourImage.jpg"
+              alt="Εικόνα ζυμώματος με αλεύρι"
+            />
+          </figure>
+
+          <div class="hero-flicker" aria-label="Συνεργάτες">
+            <div class="flicker-track">
+              <ul class="flicker-list">
+                <li>Σκλαβενιτης</li>
+                <li>Market In</li>
+                <li>My Market</li>
+                <li>Θανοπουλος</li>
+                <li>Κρητικος</li>
+              </ul>
+              <ul class="flicker-list" aria-hidden="true">
+                <li>Σκλαβενιτης</li>
+                <li>Market In</li>
+                <li>My Market</li>
+                <li>Θανοπουλος</li>
+                <li>Κρητικος</li>
+              </ul>
+              <ul class="flicker-list" aria-hidden="true">
+                <li>Σκλαβενιτης</li>
+                <li>Market In</li>
+                <li>My Market</li>
+                <li>Θανοπουλος</li>
+                <li>Κρητικος</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRODUCTS SECTION -->
+        <section class="products-container">
+          <article
+            class="product p-1"
+            style="--bg-image: url('/assets/hands-in-flour.jpg')"
+          >
+            <div class="custom-cursor">
+              <span class="cursor-text">Περισσότερα</span>
+              <svg class="cursor-arrow" viewBox="0 0 24 24">
+                <use href="/icons/sprite.svg#arrow-redo"></use>
+              </svg>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Premium Σειρά</span>
+              <h2 class="product__title">Φύλλο Βέργας</h2>
+              <p class="product__description">
+                Το αυθεντικό φύλλο που παράγεται όπως παλιά.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="product p-2"
+            style="--bg-image: url('/assets/kanatifi.jpg')"
+          >
+            <div class="custom-cursor">
+              <span class="cursor-text">Περισσότερα</span>
+              <svg class="cursor-arrow" viewBox="0 0 24 24">
+                <use href="/icons/sprite.svg#arrow-redo"></use>
+              </svg>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Ζαχαροπλαστική</span>
+              <h2 class="product__title">Φύλλο Κανταΐφι</h2>
+              <p class="product__description">
+                Λεπτές ίνες για κορυφαία σιροπιαστά γλυκά.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="product p-3"
+            style="--bg-image: url('/assets/spinach-pie.jpg')"
+          >
+            <div class="custom-cursor">
+              <span class="cursor-text">Περισσότερα</span>
+              <svg class="cursor-arrow" viewBox="0 0 24 24">
+                <use href="/icons/sprite.svg#arrow-redo"></use>
+              </svg>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Κλασική Αξία</span>
+              <h2 class="product__title">Φύλλο Χωριάτικο</h2>
+              <p class="product__description">
+                Σπιτική συνταγή που αναδεικνύει κάθε γέμιση.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="product p-4"
+            style="--bg-image: url('/assets/opening-dough.jpg')"
+          >
+            <div class="custom-cursor">
+              <span class="cursor-text">Περισσότερα</span>
+              <svg class="cursor-arrow" viewBox="0 0 24 24">
+                <use href="/icons/sprite.svg#arrow-redo"></use>
+              </svg>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Επαγγελματική Χρήση</span>
+              <h2 class="product__title">Φύλλο Κρούστας</h2>
+              <p class="product__description">
+                Λεπτό και εύπλαστο για κάθε μαγειρική δημιουργία.
+              </p>
+            </div>
+          </article>
+
+          <article
+            class="product p-5"
+            style="--bg-image: url('/assets/spring-rolls.jpg')"
+          >
+            <div class="custom-cursor">
+              <span class="cursor-text">Περισσότερα</span>
+              <svg class="cursor-arrow" viewBox="0 0 24 24">
+                <use href="/icons/sprite.svg#arrow-redo"></use>
+              </svg>
+            </div>
+
+            <div class="product__content">
+              <span class="product__category">Specialty Pastry</span>
+              <h2 class="product__title">Φύλλο Βηρυτού</h2>
+              <p class="product__description">
+                Εξαιρετικά λεπτό φύλλο, ειδικό για spring rolls, μπακλαβά και
+                λοιπά σιροπιαστά.
+              </p>
+            </div>
+          </article>
+        </section>
+
+        <!-- INGREDIENTS SECTION -->
+        <section class="secrets" aria-labelledby="secrets-title">
+          <div class="secrets__container">
+            <div class="secrets__content">
+              <p class="secrets__eyebrow">ΤΟ ΜΥΣΤΙΚΟ ΜΑΣ</p>
+              <h2 id="secret-title" class="secrets__headline">
+                ΜΟΝΑΔΙΚΟ ΦΥΛΛΟ <br />
+                ΠΙΤΑΣ ΑΠΟ ΑΓΝΕΣ <br />ΠΡΩΤΕΣ ΥΛΕΣ <br />
+                ΜΕ ΠΑΡΑΔΟΣΗ
+              </h2>
+
+              <p class="secrets__body">
+                Πίσω από κάθε σπιτική πίτα κρύβονται τρία αγνά συστατικά. Σκληρό
+                αλεύρι υψηλής πρωτεΐνης που χαρίζει στο φύλλο μας τραγανότητα
+                και ελαστικότητα. Εξαιρετικό σπορέλαιο για τη χρυσαφένια του
+                απόχρωση. Θαλασσινό αλάτι που αναδεικνύει τη γεύση χωρίς να την
+                επιβαρύνει.
+              </p>
+
+              <figure class="secrets__figure">
+                <img
+                  src="/assets/opening-dough.jpg"
+                  alt="Σκληρό αλεύρι σε μπολ με στάχυα δίπλα"
+                  class="secrets__image"
+                  loading="lazy"
+                  width="800"
+                  height="1000"
+                />
+              </figure>
+            </div>
+
+            <div class="secrets__decoration" aria-hidden="true">
+              <span class="secrets__deco-word secrets__deco-word--small"
+                >Παραδοσιακό
+              </span>
+              <span class="secrets__deco-word secrets__deco-word--small"
+                >Φύλλο Κρούστας</span
+              >
+
+              <span class="secrets__deco-word secrets__deco-word--giant"
+                >ΜΙΧΑΗΛΙΔΗΣ</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- IDEAL CLIENTS SECTION -->
+        <section class="services-showcase" aria-labelledby="services-heading">
+          <div class="services-showcase__container">
+            <!-- HIDDEN TITLE FOR SCREEN READERS & SEO -->
+            <h3 id="services-heading" class="sr-only">
+              Οι υπηρεσίες μας για ιδιώτες και επιχειρήσεις
+            </h3>
+
+            <div class="services-grid" role="list">
+              <!-- HEADER SECTION TOP RIGHT CTA -->
+              <header class="services-showcase__header">
+                <a
+                  href="/structure/contactPage.html"
+                  class="cta-link"
+                  aria-label="Επικοινωνήστε μαζί μας"
+                  >Επικοινωνήστε μαζί μας →</a
+                >
+              </header>
+
+              <aside class="card card--infinite" role="listitem">
+                <!-- CARD CONTENT -->
+                <div class="card__content">
+                  <p class="text-generic">
+                    Κορυφαίο ποαραδοσιακό φύλλο που μεταμορφώνει κάθε μαγειρική
+                    δημιουργία σε μια μοναδική γαστρονομική εμπειρία ποιότητας.
+                  </p>
+                </div>
+                <!-- CARD INFINITE SCROLL KEYWORDS -->
+                <div class="marquee-wrapper" aria-hidden="true">
+                  <ul class="marquee-content">
+                    <li>| Χειροποίητη Παράδοση</li>
+                    <li>| Αυθεντική Γεύση</li>
+                    <li>|Εγγυημένη Επιτυχία</li>
+
+                    <li>| Χειροποίητη Παράδοση</li>
+                    <li>| Αυθεντική Γεύση</li>
+                    <li>|Εγγυημένη Επιτυχία</li>
+                  </ul>
+                </div>
+              </aside>
+
+              <!-- CARD 2 -->
+              <article class="card card--dynamic" role="listitem">
+                <img
+                  src="/assets/business.jpg"
+                  alt="Παραδοσιακή ζύμη για επαγγελματίες"
+                  class="card__bg-img"
+                  loading="lazy"
+                />
+
+                <header class="card__top-text">
+                  <p>Επαγγελματική ποιότητα, σπιτική <br />φροντίδα</p>
+                </header>
+
+                <!--  TOGGLE TEXT CONTAINER -->
+                <div class="card__main-toggle">
+                  <h3 class="toggle-text" aria-live="polite">
+                    Για
+                    <span class="toggle-wrapper">
+                      <span class="phrase active">το σπίτι</span>
+                      <span class="phrase">την επιχείρηση</span>
+                    </span>
+                  </h3>
+                </div>
+
+                <div class="card__footer">
+                  <a href="/structure/products.html" class="btn-products">
+                    Δείτε τα προϊόντα μας <span aria-hidden="true">→</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- CARD 3 -- CONVERSION CARD -->
+              <article class="card card--conversion" role="listitem">
+                <div class="card__content">
+                  <h3 class="heading-main">Δημιουργήστε την τέλεια πίτα</h3>
+                  <p class="sub-text">
+                    Αναβαθμίστε το μενού σας ή το οικογενειακό τραπέζι με το πιο
+                    τραγανό και νόστιμο φύλλο της αγοράς.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section class="faq-container" aria-labelledby="faq-title">
+          <article class="faq-wrapper">
+            <h4 class="faq-title">Συχνες ερωτησεις</h4>
+            <ul class="faq-list">
+              <!-- 1ST QUESTION -->
+              <li class="faq-item">
+                <details class="faq-content" name="faq-group">
+                  <summary class="faq-content__title">
+                    Πόσο διαρκεί το φρέσκο φύλλο στο ψυγείο;
+                    <span class="faq-content__icon" aria-hidden="true">+</span>
+                  </summary>
+                  <p class="faq-content__response">
+                    Το φύλλο μας παραδίδεται φρέσκο την ίδια μέρα παρασκευής και
+                    διατηρείται έως 5 ημέρες στο ψυγείο. Συνιστούμε να το
+                    διατηρείτε στη συσκευασία του μέχρι τη χρήση.
+                  </p>
+                </details>
+              </li>
+
+              <!-- 2ND QUESTION -->
+              <li class="faq-item">
+                <details class="faq-content" name="faq-group">
+                  <summary class="faq-content__title">
+                    Μπορώ να καταψύξω το φύλλο βεργας;
+                    <span class="faq-content__icon" aria-hidden="true">+</span>
+                  </summary>
+                  <p class="faq-content__response">
+                    Το Φύλλο Βέργας το βρίσκεται κατεψυγμένο και διατηρείται για
+                    12 μήνες από την αναγραφόμενη ημερομηνία παραγωγής
+                  </p>
+                </details>
+              </li>
+
+              <!-- 3RD QUESTION -->
+              <li class="faq-item">
+                <details class="faq-content" name="faq-group">
+                  <summary class="faq-content__title">
+                    Πώς γίνεται η παράδοση;
+                    <span class="faq-content__icon" aria-hidden="true">+</span>
+                  </summary>
+                  <p class="faq-content__response">
+                    Παραδίδουμε αυθημερόν στην περιοχή μας. Επίσης θα βρείτε τα
+                    προϊόντα μας σε 38 καταστήματα Σκλαβενίτη στην Αττική.
+                    Χρησιμοποιήστε τον χάρτη μας για να βρείτε το κοντινότερο
+                    κατάστημα.
+                  </p>
+                </details>
+              </li>
+
+              <!-- 4TH QUESTION -->
+              <li class="faq-item">
+                <details class="faq-content">
+                  <summary class="faq-content__title" name="faq-group">
+                    Υπάρχει ελάχιστη ποσότητα παραγγελίας για επαγγελματίες;
+                    <span class="faq-content__icon" aria-hidden="true">+</span>
+                  </summary>
+                  <p class="faq-content__response">
+                    Για επαγγελματίες (εστιατόρια, ζαχαροπλαστεία, catering)
+                    εξυπηρετούμε παραγγελίες χονδρικής με προγραμματισμένες
+                    παραδόσεις.
+                    <a
+                      href="/structure/contactPage.html"
+                      class="faq-content__response--cta"
+                      >Επικοινωνήστε</a
+                    >
+                    μαζί μας για να συζητήσουμε τις ανάγκες σας και να σας
+                    δώσουμε εξατομικευμένη προσφορά.
+                  </p>
+                </details>
+              </li>
+
+              <!-- 5TH QUESTION -->
+              <li class="faq-item">
+                <details class="faq-content" name="faq-group" open>
+                  <summary class="faq-content__title">
+                    Το Φύλλο Βέργας περιέχει συντηρητικά;
+                    <span class="faq-content__icon" aria-hidden="true">+</span>
+                  </summary>
+                  <p class="faq-content__response">
+                    Όχι. Χρησιμοποιούμε μόνο αλεύρι σκληρό ελληνικής προέλευσης,
+                    σπορέλαιο, άμυλο, αλάτι και νερό. Κανένα συντηρητικό, κανένα
+                    πρόσθετο - γι' αυτό και το φύλλο μας έχει περιορισμένη
+                    διατηρησιμότητα σε σχέση με τα βιομηχανικά κατεψυγμένα.
+                  </p>
+                </details>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="cta-banner" aria-labelledby="cta-heading">
+          <div class="cta-banner__inner">
+            <h2 id="cta-heading" class="cta-banner__heading">
+              Ας φτιαξουμε κατι αυθεντικο μαζι.
+            </h2>
+            <a href="/structure/contactPage.html" class="cta-banner__button">
+              <span class="cta-banner__button-text">Επικοινωνία</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER SECTION -->
+      <footer
+        class="site-footer"
+        itemscope
+        itemtype="https://schema.org/FoodEstablishment"
+      >
+        <!-- INDEXED BY SEARCH ENGINES -->
+        <meta itemprop="name" content="Ζύμες Μιχαηλίδης" />
+        <meta
+          itemprop="description"
+          content="Παραδοσιακό φύλλο βέργας από τρεις γενιές. Ελληνικό αλεύρι, σπορέλαιο, χωρίς συντηρητικά."
+        />
+
+        <!-- MAIN FOOTER ROW -->
+        <div class="site-footer__main">
+          <!-- BRAND DESCRIPTION -->
+          <div class="site-footer__brand">
+            <p class="site-footer__description">
+              Φτιάχνουμε παραδοσιακό φύλλο βέργας με τα χέρια μας εδώ και τρεις
+              γενιές, χρησιμοποιώντας μόνο ελληνικό αλεύρι, σπορέλαιο και νερό.
+              Φύλλο για σπιτικές πίτες, εστιατόρια και ζαχαροπλαστεία σε όλη την
+              Ελλάδα.
+            </p>
+          </div>
+
+          <!-- LOGO -->
+          <div class="site-footer__logo">
+            <a
+              href="/structure/mainPage.html"
+              aria-label="Ζύμες Μιχαηλίδης - Αρχική σελίδα"
+            >
+              <img
+                src="/assets/logo.jpeg"
+                alt="Ζύμες Μιχαηλίδης"
+                class="site-footer__logo-img"
+                width="80"
+                height="80"
+              />
+            </a>
+          </div>
+
+          <!-- SITE FOOTER NAVIGATION -->
+          <nav class="site-footer__nav" aria-label="Footer navigation">
+            <h3 class="site-footer__nav-title">Μενου</h3>
+            <ul class="site-footer__nav-list">
+              <li>
+                <a href="/structure/timeline.html" class="site-footer__nav-link"
+                  >Χρονικό</a
+                >
+              </li>
+              <li>
+                <a href="/structure/products.html" class="site-footer__nav-link"
+                  >Προϊόντα</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- SOCIAL LINKS -->
+          <nav class="site-footer__social" aria-label="Social media links">
+            <h3 class="site-footer__nav-title">Social</h3>
+            <ul class="site-footer__social-list">
+              <!-- INSTAGRAM SOCIAL -->
+              <li>
+                <a
+                  href="/"
+                  class="site-footer__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ακολουθήστε μας στο Instagram"
+                >
+                  Instagram
+                </a>
+              </li>
+
+              <!-- TIK TOK -->
+              <li>
+                <a
+                  href="/"
+                  class="site-footer__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ακολουθήστε μας στο TikTok"
+                >
+                  TikTok
+                </a>
+              </li>
+
+              <!-- FACEBOOK -->
+              <li>
+                <a
+                  href="/"
+                  class="site-footer__social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ακολουθήστε μας στο Facebook"
+                >
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- BOTTOM ROW -- COPYRIGHT + ADDRESS -->
+        <div class="site-footer__bottom">
+          <div class="site-footer__legal">
+            <p class="site-footer__tagline">
+              Φύλλο σαν της γιαγιάς, σε ποσότητες για επαγγελματίες.
+            </p>
+            <p class="site-footer__copyright">
+              © Ζύμες Μιχαηλίδης 2026. Designed and developed by
+              <a
+                href="https://framepenguin.com/"
+                class="site-footer__copyright-mention"
+                >Framepenguin</a
+              >
+            </p>
+          </div>
+
+          <!-- ADDRESS -->
+          <address
+            class="site-footer__address"
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
+            <span class="site-footer__address-marker" aria-hidden="true"
+              >●</span
+            >
+            <span itemprop="streetAddress">Λεωφόρος Δημοκρατίας 236,</span>
+            <span itemprop="addressLocality">Αχαρνές</span>
+            <span itemprop="addressRegion">Αθήνα,</span>
+            <span itemprop="postalCode">13671,</span>
+            <span itemprop="addressCountry" content="GR">Ελλάδα</span>
+          </address>
+
+          <!-- HIDDEN CONTACT DATA FOR SEO -->
+          <meta itemprop="telephone" content="+302164000660" />
+          <meta itemprop="email" content="info@zymes-michailidis.gr" />
+          <meta itemprop="url" content="https://zymes-michailidis.gr" />
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

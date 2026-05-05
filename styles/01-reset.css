@@ -1,0 +1,152 @@
+/* MODERN CSS RESET */
+
+/* 1. BOX-SIZING — the most important reset rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. REMOVE DEFAULT MARGINS */
+* {
+  margin: 0;
+}
+
+/* 3. HTML & BODY BASE */
+html {
+  line-height: var(--lh-normal);
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  color: var(--color-text);
+  background-color: var(--neutral-200);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 4. MEDIA ELEMENTS — images, video, svg, etc. */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 5. FORM ELEMENTS — inherit from parent */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 6. BUTTONS — strip default browser styling */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* 7. TYPOGRAPHY — prevent text overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. HEADINGS — tighter line-height */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--lh-tight);
+  text-wrap: balance;
+}
+
+/* 9. BODY TEXT — better line-height for reading */
+p {
+  text-wrap: pretty;
+}
+
+/* 10. LISTS — remove default padding & bullets */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* 11. LINKS — inherit color */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-text-strong);
+}
+
+/* 12. FOCUS STYLES — accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+/* 13. REDUCED MOTION — accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 14. TABLES — consistent borders */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 15. FIELDSET / LEGEND — remove default styling */
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+/* 16. HIDDEN ELEMENTS — utility class */
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Progressive enhancement: animates in Chromium */
+@supports (interpolate-size: allow-keywords) {
+  :root {
+    interpolate-size: allow-keywords;
+  }
+}
